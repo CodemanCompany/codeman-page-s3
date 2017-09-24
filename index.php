@@ -5,16 +5,16 @@ require 'core/Template.php';
 $data = [
 	'index'		=>	[
 		'title'			=>	'Codeman',
-		'description'	=>	'Description'
+		'description'	=>	'Description',
 	],
 	'about'	=>	[
 		'title'			=>	'Company - Codeman',
-		'description'	=>	'Description'
+		'description'	=>	'Description',
 	],
 	'contact'	=>	[
 		'title'			=>	'Contact - Codeman',
-		'description'	=>	'Description'
-	]
+		'description'	=>	'Description',
+	],
 ];
 
 try {
