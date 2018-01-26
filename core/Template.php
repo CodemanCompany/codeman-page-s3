@@ -26,7 +26,7 @@ class Template implements Core {
 		$this -> config[ 'file' ] = ( $this -> config[ 'file' ] === '' ) ? 'index' : $this -> config[ 'file' ];
 	}	// end construct
 
-	private function build( string $file = null ) {
+	private function build( string $file = null ): string {
 		$page = null;
 
 		if( ! file_exists( $this -> config[ 'path' ] ) )
@@ -70,7 +70,7 @@ class Template implements Core {
 		return trim( $data );
 	}	// end method
 
-	public function build_project() {
+	public function build_project(): void {
 		exec( 'sh core/structure.sh' );
 
 		if( ! file_exists( 'build' ) )
@@ -85,7 +85,7 @@ class Template implements Core {
 		echo 'Successfully built!!!!';
 	}	// end method
 
-	public function show() {
+	public function show(): void {
 		echo $this -> build();
 	}	// end method
 }	// end class

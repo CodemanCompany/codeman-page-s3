@@ -7,5 +7,5 @@
 #  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 
 directory="build"
-zip -r $directory.zip $directory
+zip -r0 $directory.zip $directory
 rm -rf $directory
