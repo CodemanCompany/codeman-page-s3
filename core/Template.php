@@ -64,6 +64,10 @@ class Template implements Core {
 		return ( is_null( $file ) ) ? $page : $this -> minified( $page );
 	}	// end method
 
+	private function fix_url( string $page ): string {
+		return str_replace( '.html', '', $page );
+	}	// end method
+
 	private function minified( string $data ): string {
 		$data = str_replace( "\n", '', $data );
 		$data = str_replace( "\t", '', $data );
@@ -86,6 +90,6 @@ class Template implements Core {
 	}	// end method
 
 	public function show(): void {
-		echo $this -> build();
+		echo $this -> fix_url( $this -> build() );
 	}	// end method
 }	// end class
