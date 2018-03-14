@@ -25,6 +25,6 @@
 		<main>{content}</main>
 		<footer>{footer}</footer>
 
-		{browser-scripting}
+		{scripts}
 	</body>
 </html>

@@ -42,7 +42,7 @@ class Template implements Core {
 
 		else {
 			$this -> structure = [
-				'browser-scripting'	=>	file_get_contents( $this -> config[ 'path' ] . 'browser-scripting.php' ),
+				'scripts'	=>	file_get_contents( $this -> config[ 'path' ] . 'scripts.php' ),
 				'content'			=>	file_get_contents( $this -> config[ 'content' ] ),
 				'description'		=>	$this -> config[ 'data' ][ $this -> config[ 'file' ] ][ 'description' ],
 				'footer'			=>	file_get_contents( $this -> config[ 'path' ] . 'footer.php' ),

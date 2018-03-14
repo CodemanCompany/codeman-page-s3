@@ -19,8 +19,8 @@ $data = [
 
 try {
 	$page = new Page( $data );
-	// $page -> build_project();
-	$page -> show();
+	$page -> build_project();
+	// $page -> show();
 }	// end try
 
 catch( Exception $error ) {

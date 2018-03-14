@@ -1,6 +1,6 @@
 {
   "name": "codeman-page",
-  "version": "1.0.0",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/CodemanCompany/codeman-page#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "@fancyapps/fancybox": "^3.2.5",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1"
   }
 }
